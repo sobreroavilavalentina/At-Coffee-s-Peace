@@ -1,0 +1,14 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "modulo-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "Valentina Sobrero Avila",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

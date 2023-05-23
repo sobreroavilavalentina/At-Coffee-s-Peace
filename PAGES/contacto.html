@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AT COFFEE´S PEACE | Bar </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="./assets/images/logo.ico.ico" type="image/x-icon" />
-
 </head>
 
 <body>
@@ -33,39 +32,90 @@
           
 </header>
 
+<main>
+  <section class="contacto__cont">
+      <h2>Contacto & Reservas</h2>
+      <div class="contacto__cont-text">
+        <p>Reservas con 24/12 hs. de anticipación <br />Cumpleaños o eventos agendar con un <br />MINIMO de 48 hs. de anticipación</p>
+        <p>O podes llamar al 000 354 1210 <br /> todos los días de 10 a 20 hs.</p>
+      </div>
+      <div class="contacto__cont-form">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label  for="floatingInput">Nombe y Apellido</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Correo o Nro. de contacto</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">ASUNTO</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" id="caja-de-texto" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Deja tu consulta aquí <br/> Te responderemos a la brevedad</label>
+        </div>
+        <a href="#">ENVIAR</a>
+      </div>
+  </section>
+
+  <section class="newsletter__container">
+    <h3 class="newsletter__container-title">Mantenete actualizado</h3>
+    <p class="newsletter__container-descrip">enterate de nuevos productos, descuentos y novedades exclusivas antes que nadie</p>
+    <div class="mb-1">
+      <input type="email" class="form-control w-55 m-auto" placeholder="Tu email" id="exampleInputEmail1" aria-describedby="emailHelp" />
+      <div id="emailHelp" class="form-text">Nunca compartiremos tu dirección de email con nadie.</div>
+    </div>
+    <a href="#" class="newsletter__container-button">ENVIAR</a>
+    <h2 class="newsletter__container-titlemap">SUCURSAL PRINCIPAL | RECOLETA</h2>
+    <iframe class="newsletter__container-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.126857546074!2d-58.416942497698145!3d-34.58479063733321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses!2sar!4v1683429878273!5m2!1ses!2sar"></iframe>
+  </section>
+</main>
+
 
 <footer>
- 
-    <section class="footer-elements-position">
-      <div class="footer-navbar">
-        <div><a href="../index.html">INICIO</a></div>
-        <div><a href="../PAGES/menu.html">MENÚ</a></div>
-        <div><a href="../PAGES/sucursales.html">SUCURSALES</a></div>
-        <div><a href="../PAGES/contacto.html">CONTACTO</a></div>
-      </div> 
-        <h2 class="footer-logo">At Coffee´s Peace</h2>
-        <!-- DIV SOLO PARA DESKTOP -->
+  <!-- footer para mobile -->
+  <div class="footer__mobile">
+    <h2>at coffee´s peace</h2>
+    <!-- <hr /> -->
+    <div>
+      <img src="../assets/images/phone.png" alt="logo telefono">
+      <p>000 91 3524</p>
+    </div>
+    <div>
+      <img src="../assets/images/email.png" alt="logo email">
+      <p>info@atcoffeespeace.com.ar</p>
+    </div>
+    <p class="footer__mobile-end">© 2023 At coffee´s peace <br />Todos los derechos reservados.</p>
+  </div>
 
-        <div class="d-flex flex-column justify-content-center">
-          <div class="p-2">
-            <img src="../assets/images/phone.png" alt="icono telefono">
-            <p>000 91 3524</p>
-          </div>
-          <div class="p-2">
-            <img src="../assets/images/email.png" alt="logo email">
-            <p>info@atcoffeespeace.com.ar</p>
-          </div>
-          <div class="p-2 footer-form">
-            <h6>SUSCRIBITE</h6>
-            <input type="email" class="form-control w-55 m-auto" placeholder="Tu email" id="exampleInputEmail1" aria-describedby="emailHelp" />
-            <button type="button" class="btn btn-light">ENVIAR</button>
-          </div>
-        </div>     
-        
-        <div class="footer-derechos">
-          <p><a href="">© 2023 At coffee´s peace <br />Todos los derechos reservados.</a></p>
+  <!-- footer para desktop -->
+  <div class="footer__desktop">
+    <div class="footer__desktop-navbar">
+      <div><a href="./index.html">INICIO</a></div>
+      <div><a href="./PAGES/menu.html">MENÚ</a></div>
+      <div><a href="./PAGES/sucursales.html">SUCURSALES</a></div>
+      <div><a href="./PAGES/contacto.html">CONTACTO</a></div>
+    </div>
+    <div class="footer__desktop-info">
+      <div class="footer__desktop-contacto">
+        <h4>CONTACTO</h4>
+        <p>+54 000 91 3524 <br/>info@atcoffeespeace.com.ar</p>  
+      </div>
+      <div>
+        <h4>SUSCRIBITE</h4>
+        <div class="footer__desktop-form">
+          <input type="email" placeholder="Tu email" id="exampleInputEmail1" />
+          <button type="button" class="btn btn-light">ENVIAR</button>  
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="footer__desktop-rights">
+      <h2>at coffee´s peace</h2>
+      <small>© 2023 At coffee´s peace <br />Todos los derechos reservados.</small>
+    </div>
+  </div>
 
 </footer>
 

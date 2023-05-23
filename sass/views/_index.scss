@@ -1,0 +1,144 @@
+.pStyle {
+  font-family: $noserifFont;
+  font-style: oblique;
+  font-size: 20px;
+  color: rgb(62, 55, 104);
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.frases-inicio {
+  font-family: karla;
+  font-style: italic;
+  text-align: center;
+  margin: 20px auto 20px auto;
+}
+
+.main-img-desktop {
+  display: none;
+}
+
+.gallery__inicio {
+  display: none;
+}
+
+.carousel {
+  margin: 30px;
+
+  &-control-prev-icon {
+    filter: invert(108%);
+  }
+
+  &-control-next-icon {
+    filter: invert(108%);
+  }
+
+  .img-carousel-style {
+    border-radius: 20px;
+  }
+}
+
+.mosaico__img {
+  display: none;
+}
+
+.mosaico-texto {
+  font-family: $serifFont;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+@media  screen and (min-width: $bpMedium) {
+
+  .main-img-desktop {
+    display: contents;
+  }
+
+  .contImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/images/mainimage.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+
+  .grid__text {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "div1 p1"
+    "p2 div2";
+    font-family: karla;
+    text-align: center;
+
+    &-title {
+      font-size: 25px;
+      font-style: italic; 
+    }
+
+    &-div1 { 
+      grid-area: p2;
+      margin: auto auto 60px 40px;
+    }
+
+    &-div2 { 
+      grid-area: p1;
+      margin: 60px 40px auto auto;
+    }
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .mosaico__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img1 img2 text"
+    "img3 img3 text";
+    margin: 30px auto;
+    gap: 20px;
+    width: 85%;
+
+    img:hover {
+      filter: grayscale(80%);
+    }
+
+    .imgindex-1 {
+      grid-area: img1;
+      width: 100%;
+      height: auto;
+    }
+  
+    .imgindex-2 {
+      grid-area: img2;
+      width: 100%;
+      height: auto;
+    }
+  
+    .imgindex-3 {
+      grid-area: img3;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .mosaico-texto {
+    grid-area: text;
+    text-align: center;
+    margin: auto;
+    font-family: $serifFont;
+  }
+
+}

@@ -1,0 +1,72 @@
+.newsletter__container {
+  display: block;
+  margin: 30px auto;
+  width: 80%;
+  font-family: karla;
+  text-align: center;
+
+  h3 {
+    font-family: playfair;
+    font-weight: bold;
+  }
+
+  a {
+    @extend .button-send;
+  }
+
+  .mb-1 {
+    margin: auto;
+  }
+
+  &-map {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:$bpMedium) {
+  .newsletter__container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 60px auto auto auto;
+    grid-template-areas: 
+    "h3 h2"
+    "p map"
+    "input map"
+    "button map";
+    margin: 40px auto;
+    row-gap: 10px;
+    max-width: $bpLarge;
+  
+
+   &-title {
+    grid-area: h3;
+   }
+
+   &-descrip {
+    grid-area: p;
+    font-size: 20px;
+   }
+   
+   &-titlemap{
+    grid-area: h2;
+   }
+
+   .mb-1 {
+    grid-area: input;
+    max-width: 500px;
+    margin: 10px;
+   }
+
+   &-button {
+    grid-area: button;
+   }
+
+   &-map {
+    grid-area: map;
+    align-self: center;
+   }
+  }
+}

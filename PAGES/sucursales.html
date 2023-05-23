@@ -5,66 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AT COFFEE´S PEACE | Bar </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="shortcut icon" href="./assets/images/logo.ico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../assets/images/logo.ico.ico" type="image/x-icon" />
 
 </head>
 
 <body>
-  <header>
-    <h1> <a href="./index.html">at coffee´s <br />peace</a></h1>
-  <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav nav-style m-auto">
-            <a class="nav-link" href="../index.html">INICIO</a>
-            <a class="nav-link" href="../PAGES/menu.html">MENÚ</a>
-            <a class="nav-link" id="actual-page-navbar" href="../PAGES/sucursales.html">SUCURSALES</a>
-            <a class="nav-link" href="../PAGES/contacto.html">CONTACTO</a>
+  <header> 
+    <h1> <a href="../index.html">at coffee´s <br />peace</a></h1>
+    <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav-style m-auto">
+              <a class="nav-link" href="../index.html">INICIO</a>
+              <a class="nav-link" href="../pages/menu.html">MENÚ</a>
+              <a class="nav-link" id="actual-page-navbar" href="../pages/sucursales.html">SUCURSALES</a>
+              <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h2 class="actual-page-name">SUCURSALES</h2>
+</header>
+
+  <main>
+    <section>
+      <div class="suc-cont">
+        <h2>Recoleta, Buenos Aires</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <img src="../assets/images/sucursale recoleta.jpg" alt="sucursal recoleta">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.126857546074!2d-58.416942497698145!3d-34.58479063733321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses!2sar!4v1683429878273!5m2!1ses!2sar"></iframe>
+      </div>
+      <div class="suc-cont">
+        <h2>Villa Carlos Paz, Córdoba</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <img class="img" src="../assets/images/sucursal carlos paz.jpg" alt="sucursal recoleta">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.126857546074!2d-58.416942497698145!3d-34.58479063733321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses!2sar!4v1683429878273!5m2!1ses!2sar"></iframe>
+      </div>
+    </section>
+    <section class="newsletter__container">
+      <h3 class="newsletter__container-title">Mantenete actualizado</h3>
+      <p class="newsletter__container-descrip">enterate de nuevos productos, descuentos y novedades exclusivas antes que nadie</p>
+      <div class="mb-1">
+        <input type="email" class="form-control w-55 m-auto" placeholder="Tu email" id="exampleInputEmail1" aria-describedby="emailHelp" />
+        <div id="emailHelp" class="form-text">Nunca compartiremos tu dirección de email con nadie.</div>
+      </div>
+      <a href="#" class="newsletter__container-button">ENVIAR</a>
+      <h2 class="newsletter__container-titlemap">SUCURSAL PRINCIPAL | RECOLETA</h2>
+      <iframe class="newsletter__container-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.126857546074!2d-58.416942497698145!3d-34.58479063733321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses!2sar!4v1683429878273!5m2!1ses!2sar"></iframe>
+  </section>
+  </main>
+
+  <footer>
+    <!-- footer para mobile -->
+    <div class="footer__mobile">
+      <h2>at coffee´s peace</h2>
+      <!-- <hr /> -->
+      <div>
+        <img src="../assets/images/phone.png" alt="logo telefono">
+        <p>000 91 3524</p>
+      </div>
+      <div>
+        <img src="../assets/images/email.png" alt="logo email">
+        <p>info@atcoffeespeace.com.ar</p>
+      </div>
+      <p class="footer__mobile-end">© 2023 At coffee´s peace <br />Todos los derechos reservados.</p>
+    </div>
+
+    <!-- footer para desktop -->
+    <div class="footer__desktop">
+      <div class="footer__desktop-navbar">
+        <div><a href="../index.html">INICIO</a></div>
+        <div><a href="../pages/menu.html">MENÚ</a></div>
+        <div><a href="../pages/sucursales.html">SUCURSALES</a></div>
+        <div><a href="../pages/contacto.html">CONTACTO</a></div>
+      </div>
+      <div class="footer__desktop-info">
+        <div class="footer__desktop-contacto">
+          <h4>CONTACTO</h4>
+          <p>+54 000 91 3524 <br/>info@atcoffeespeace.com.ar</p>  
+        </div>
+        <div>
+          <h4>SUSCRIBITE</h4>
+          <div class="footer__desktop-form">
+            <input type="email" placeholder="Tu email" id="exampleInputEmail1" />
+            <button type="button" class="btn btn-light">ENVIAR</button>  
           </div>
         </div>
       </div>
-    </nav>
-    <h2 class="actual-page-name">SUCURSALES</h2>
-  </header>
-
-
-<footer>
-  
-  <section class="footer-elements-position">
-    <div class="footer-navbar">
-      <div><a href="../index.html">INICIO</a></div>
-      <div><a href="../PAGES/menu.html">MENÚ</a></div>
-      <div><a href="../PAGES/sucursales.html">SUCURSALES</a></div>
-      <div><a href="../PAGES/contacto.html">CONTACTO</a></div>
-    </div> 
-      <h2 class="footer-logo">At Coffee´s Peace</h2>
-      <!-- DIV SOLO PARA DESKTOP -->
-
-      <div class="d-flex flex-column justify-content-center">
-        <div class="p-2">
-          <img src="../assets/images/phone.png" alt="icono telefono">
-          <p>000 91 3524</p>
-        </div>
-        <div class="p-2">
-          <img src="../assets/images/email.png" alt="logo email">
-          <p>info@atcoffeespeace.com.ar</p>
-        </div>
-        <div class="p-2 footer-form">
-          <h6>SUSCRIBITE</h6>
-          <input type="email" class="form-control w-55 m-auto" placeholder="Tu email" id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <button type="button" class="btn btn-light">ENVIAR</button>
-        </div>
-      </div>     
-      
-      <div class="footer-derechos">
-        <p><a href="">© 2023 At coffee´s peace <br />Todos los derechos reservados.</a></p>
+      <div class="footer__desktop-rights">
+        <h2>at coffee´s peace</h2>
+        <small>© 2023 At coffee´s peace <br />Todos los derechos reservados.</small>
       </div>
-  </section>
+    </div>
 
-</footer>
+  </footer>
 
 </body>
 </html>

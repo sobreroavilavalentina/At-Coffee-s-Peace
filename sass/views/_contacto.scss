@@ -1,0 +1,80 @@
+.contacto__cont {
+  max-width: $bpLarge;
+  width: 90%;
+  margin: 20px auto;
+  background-color: $colorIntermedio;
+  border-radius: 10px;
+  padding-bottom: 20px;
+
+  h2 {
+    background-color: $colorAzul;
+    color: $colorClaro;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    font-family: $serifFont;
+    font-weight: bold;
+  }
+
+  &-text {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: $colorGris;
+    color: rgb(62, 55, 104);
+    font-family: $noserifFont;
+  }
+
+  &-form {
+    color: $colorClaro;
+    font-family: karla;
+    padding-left: 40px;
+
+    .form-control {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px $colorClaro solid;
+      border-radius: 0;
+      width: fit-content;
+    }
+
+    #caja-de-texto {
+      border-bottom: none;
+      border: 1px $colorClaro solid;
+      border-radius: 5px;
+      width: 90%;
+    }
+  }
+
+  a {
+    @extend .button-send;
+  }
+}
+
+@media screen and (min-width: $bpMedium) {
+  .contacto__cont {
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "contacto contacto" 
+    "text form";
+
+    h2 {
+      grid-area: contacto;
+    }
+    
+    &-text {
+      max-width: 400px;
+      grid-area: text;
+      text-align: center;
+      padding: 40px;
+    }
+
+    &-form {
+      grid-area: form;
+    }
+  }  
+
+}

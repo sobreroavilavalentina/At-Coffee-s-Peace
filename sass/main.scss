@@ -1,0 +1,24 @@
+// components
+@import "./components/header";
+@import "./components/subscription";
+@import "./components/footer";
+
+// utils
+@import "./utils/variables";
+@import "./utils/global";
+
+// views
+@import "./views/index";
+@import "./views/menu";
+@import "./views/sucursales";
+@import "./views/contacto";
+
+@font-face {
+  font-family: karla;
+  src: url(../assets/tff/Karla-Bold.ttf);
+}
+
+@font-face {
+  font-family: playfair;
+  src: url(../assets/tff/PlayfairDisplay-VariableFont_wght.ttf);
+}

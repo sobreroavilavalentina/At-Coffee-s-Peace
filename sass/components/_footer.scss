@@ -1,0 +1,120 @@
+@import "../utils/variables";
+@import "../utils/_global.scss";
+
+footer {
+  color: $colorClaro;
+  font-family: $noserifFont;
+  background-color: $colorIntermedio;
+
+  a {
+    text-decoration: none;
+    color: $colorClaro;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer__desktop {
+  display: none;
+}
+
+.footer__mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+
+  h2 {
+    padding: 10px;
+    @extend .nombre-cafeteria;
+  }
+
+  &-end {
+    background-color: $colorClaro;
+    color: $colorAzul;
+    padding: 10px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width:800px) {
+  .footer__mobile {
+    display: none;
+  }
+
+  .footer__desktop {
+    display: flex;
+    flex-direction: column;
+    
+    
+    &-navbar {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+      gap: 20px;
+      padding-top: 15px;
+      font-size: 20px;
+    }
+
+    &-navbar a:hover {
+      color: $colorBeige;
+      text-decoration: underline 2px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        border-radius: 6px;
+      }
+
+      button {
+        width: 80px;
+        margin-top: 10px;
+      }
+    }
+    
+    &-rights {
+      background-color: $colorClaro;
+      color: $colorAzul;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      
+      h2 {
+        font-weight: bold;
+        font-family: $serifFont;
+        color: $titulo;
+      }
+    }
+    
+  }
+}
+
