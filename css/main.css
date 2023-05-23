@@ -208,7 +208,7 @@ main {
 footer {
   color: #f7f7f7;
   font-family: karla;
-  background-color: #4f5776;
+  background-color: rgb(18, 17, 17);
 }
 footer a {
   text-decoration: none;
