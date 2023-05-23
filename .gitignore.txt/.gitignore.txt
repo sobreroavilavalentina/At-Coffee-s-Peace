@@ -1,0 +1,9 @@
+# ignora node modules
+
+*.node_modules
+
+#ignora imagenes no usadas en la tercera pre entrega
+drink1.jpg
+drink2.jpg
+food1.jpg
+paso1.jpg
