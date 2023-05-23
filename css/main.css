@@ -144,8 +144,8 @@ main {
   width: 90%;
   margin: 20px auto;
   padding-bottom: 20px;
-  color: rgb(185, 139, 82);
-  border: rgb(185, 139, 82) 2px solid;
+  color: #1d2444;
+  border-bottom: 2px black solid;
 }
 .box-style h2 h3, .suc-cont h2 h3, .listado__menu h2 h3 {
   background-color: #1d2444;
@@ -208,7 +208,7 @@ main {
 footer {
   color: #f7f7f7;
   font-family: karla;
-  background-color: rgb(18, 17, 17);
+  background-color: #1d2444;
 }
 footer a {
   text-decoration: none;
@@ -354,8 +354,8 @@ main {
   width: 90%;
   margin: 20px auto;
   padding-bottom: 20px;
-  color: rgb(185, 139, 82);
-  border: rgb(185, 139, 82) 2px solid;
+  color: #1d2444;
+  border-bottom: 2px black solid;
 }
 .box-style h2 h3, .suc-cont h2 h3, .listado__menu h2 h3 {
   background-color: #1d2444;
@@ -608,7 +608,7 @@ img {
     font-family: karla;
     text-align: center;
     margin: 5px auto;
-    color: rgb(185, 139, 82);
+    color: black;
     font-size: 23px;
   }
   .listado__desktop {
@@ -664,7 +664,6 @@ img {
     width: 80%;
     max-width: 1000px;
     margin: 20px auto;
-    border-radius: 10px;
   }
   .suc-cont h2 {
     grid-area: lugar;
