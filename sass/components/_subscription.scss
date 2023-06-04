@@ -1,13 +1,14 @@
+@import "../utils/variables";
+@import "../utils/_global.scss";
+
 .newsletter__container {
+  @include noserif-text ($colorAzul);
   display: block;
   margin: 30px auto;
   width: 80%;
-  font-family: karla;
-  text-align: center;
 
   h3 {
-    font-family: playfair;
-    font-weight: bold;
+    @include serif-titles ($colorOscuro);
   }
 
   a {
@@ -48,10 +49,12 @@
    &-descrip {
     grid-area: p;
     font-size: 20px;
+    margin: auto;
    }
    
    &-titlemap{
     grid-area: h2;
+    margin: auto;
    }
 
    .mb-1 {
@@ -62,6 +65,7 @@
 
    &-button {
     grid-area: button;
+    margin: 10%;
    }
 
    &-map {

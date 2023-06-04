@@ -1,10 +1,11 @@
 @import "../utils/variables";
+@import "../utils/global";
 
 header {
 	h1 {
-		@extend .nombre-cafeteria;
+		@include serif-titles ($colorAzul);
 		padding: 20px;
-		font-size: 60px;
+		font-size: 55px;
 		line-height: 50px;
 
 		a {
@@ -30,7 +31,7 @@ header {
 .nav-link {
 	&:hover {
 		text-decoration: underline 2px;
-		color: #2A2B2B;
+		color: $colorBeige;
 		cursor: pointer;
 	}
 }

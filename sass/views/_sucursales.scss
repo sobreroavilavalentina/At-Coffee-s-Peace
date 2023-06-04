@@ -8,14 +8,10 @@
   "map";
   width: 80%;
   margin: 20px auto;
-  // color: $colorBeige;
-  // background-color: $colorBeige;
-  // border-radius: 10px;
   @extend .box-style;
 
   h2 {
     grid-area: lugar;
-    // color: rgb(231, 255, 247);
     font-family: $noserifFont;
     margin: auto;
     padding: 8px;

@@ -4,7 +4,7 @@
 footer {
   color: $colorClaro;
   font-family: $noserifFont;
-  background-color: $colorAzul;
+  background-color: $colorOscuro;
 
   a {
     text-decoration: none;
@@ -30,7 +30,6 @@ footer {
 
   h2 {
     padding: 10px;
-    @extend .nombre-cafeteria;
   }
 
   &-end {
@@ -111,7 +110,6 @@ footer {
       h2 {
         font-weight: bold;
         font-family: $serifFont;
-        color: $titulo;
       }
     }
     

@@ -7,27 +7,24 @@
   padding-bottom: 20px;
 
   h2 {
+    @include serif-titles ($colorClaro);
+    text-align: left;
     background-color: $colorAzul;
-    color: $colorClaro;
     padding: 20px;
     border-radius: 10px 10px 0 0;
-    font-family: $serifFont;
-    font-weight: bold;
   }
 
   &-text {
+    @include noserif-text ($colorAzul);
     margin: 20px;
     padding: 20px;
-    text-align: center;
     border-radius: 8px;
     background-color: $colorGris;
-    color: rgb(62, 55, 104);
-    font-family: $noserifFont;
   }
 
   &-form {
     color: $colorClaro;
-    font-family: karla;
+    font-family: $noserifFont;
     padding-left: 40px;
 
     .form-control {
@@ -48,6 +45,9 @@
 
   a {
     @extend .button-send;
+    background-color: $colorClaro;
+    color: $colorAzul;
+    text-align: center;
   }
 }
 

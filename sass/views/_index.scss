@@ -1,9 +1,7 @@
 .pStyle {
-  font-family: $noserifFont;
-  font-style: oblique;
-  font-size: 20px;
-  color: rgb(62, 55, 104);
-  text-align: center;
+  @include noserif-oblique ($colorAzul);
+  font-size: 18px;
+  margin: 3%;
 }
 
 img {
@@ -11,9 +9,7 @@ img {
 }
 
 .frases-inicio {
-  font-family: karla;
-  font-style: italic;
-  text-align: center;
+  @include noserif-oblique ($colorAzul);
   margin: 20px auto 20px auto;
 }
 
@@ -26,7 +22,7 @@ img {
 }
 
 .carousel {
-  margin: 30px;
+  margin: 10px;
 
   &-control-prev-icon {
     filter: invert(108%);
@@ -37,7 +33,7 @@ img {
   }
 
   .img-carousel-style {
-    border-radius: 20px;
+    border-radius: 10px;
   }
 }
 
@@ -46,13 +42,20 @@ img {
 }
 
 .mosaico-texto {
-  font-family: $serifFont;
-  text-align: center;
+  @include serif-titles ($colorBeige);
   width: 75%;
   margin: auto;
 }
 
 @media  screen and (min-width: $bpMedium) {
+  .desktop-mobile {
+    display: none;
+  }
+
+  .pStyle {
+    font-size: 23px;
+    margin: 20px auto;
+  }
 
   .main-img-desktop {
     display: contents;
@@ -70,19 +73,16 @@ img {
   }
 
   .grid__text {
-    color: white;
+    @include noserif-oblique (white);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "div1 p1"
     "p2 div2";
-    font-family: karla;
-    text-align: center;
 
     &-title {
       font-size: 25px;
-      font-style: italic; 
     }
 
     &-div1 { 
@@ -95,11 +95,12 @@ img {
       margin: 60px 40px auto auto;
     }
   }
+}
 
+@media screen and (min-width:$bpMedium2) {
   .carousel {
     display: none;
   }
-
   .mosaico__img {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
@@ -110,6 +111,10 @@ img {
     margin: 30px auto;
     gap: 20px;
     width: 85%;
+
+    img {
+      border-radius: 5px;
+    }
 
     img:hover {
       filter: grayscale(80%);
@@ -135,10 +140,9 @@ img {
   }
 
   .mosaico-texto {
+    @include serif-titles ($colorAzul);
     grid-area: text;
-    text-align: center;
     margin: auto;
-    font-family: $serifFont;
   }
 
 }

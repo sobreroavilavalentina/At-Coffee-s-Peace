@@ -20,7 +20,7 @@ body {
 
 .etiqueta-link {
 	text-decoration: none;
-	color: $titulo;
+	color: $colorAzul;
 	&:hover {
 		text-decoration: none;
 		color: $colorBeige;
@@ -39,14 +39,29 @@ main {
 	background-color: $colorClaro;
 }
 
-// extend titulo
-
-.nombre-cafeteria {
-	font-family: $serifFont;
-	font-weight: bold;
-	text-align: center;
-	margin: auto;
+// estilos de fuentes
+@mixin serif-titles ($serifColor) {
+  font-family: $serifFont;
+  color: $serifColor;
+  text-align: center;
+  font-weight: bold;
 }
+
+@mixin noserif-text ($textColor) {
+  font-family: $noserifFont;
+  text-align: center;
+  color: $textColor;
+}
+
+@mixin noserif-oblique ($noserifColor){
+  font-family: $noserifFont;
+  font-style: italic;
+  text-align: center;
+  color: $noserifColor;
+}
+
+
+
 
 // extend box style
 .box-style {
@@ -55,7 +70,7 @@ main {
   margin: 20px auto;
   padding-bottom: 20px;
 	color: $colorAzul;
-	border-bottom: 2px black solid;
+	border-bottom: 2px $colorAzul solid;
 
 	h2 h3 {
 		background-color: $colorAzul;
@@ -65,7 +80,6 @@ main {
 		font-family: $noserifFont;
 		font-weight: bold;
 	}
-
 }
 
 // extend parrafos sin serif
