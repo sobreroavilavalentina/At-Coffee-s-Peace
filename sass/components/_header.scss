@@ -2,6 +2,7 @@
 @import "../utils/global";
 
 header {
+	
 	h1 {
 		@include serif-titles ($colorAzul);
 		padding: 20px;
